@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qyz Uzatu</title>
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/parrot.gif" />
+  </head>
+
+  <body>
+
+    <!-- End Preloader-->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Qyz  Uzatu</h1>
+            <h2 class="title">Zariat</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+                12 Шілде 2026
+                </br>
+                Кокшетау, Қазақстан
+                </br>
+                Khan Saray мейрамханасы
+              
+            </h4>
+          </div>
+
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Days</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">HH</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">MM</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">SS</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '07/12/2026 14:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, 
+                offset: +5, // TODO Your Timezone Offset
+                day: 'Day',
+                days: 'Days'
+              }, function () {
+                alert('The countdown has ended!');
+              });
+            </script>  
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+            <!-- <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script> -->
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+
+
+
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Бастапқы бет</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Уақыт</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Орналасқан жері</a>
+                  </li>
+                  <li>
+                    <a href="#rsvp">Бекіту</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+
+      
+      <!-- Begin regular-section-->
+      <div class="section-light regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+          
+          Қадірлі ағайын- туыс, құда-жекжат, дос- жаран!
+          <br />
+          Сіздерді қызымыз Зариаттың ұзату тойына арналған салтанатты кешімізше ізгі ниетпен шақырамыз.
+        </p>
+        <div data-aos="fade-in" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            <br>
+          </div>
+          <strong> Той иелері:</strong>
+
+            <div class="nama-lengkap">
+              Нурдаулет
+
+            </div>
+            <div class="nama-lengkap">
+
+              Жанар
+            </div>
+
+          </div>
+        </div>
+       
+      <!-- End regular-section-->    
+            <!-- Begin Waktu Section -->
+            <div class="section-dark" id="Waktu">
+              <div class="container">
+                <div class="columns is-multiline">
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-right"
+                  >
+                  
+                    <p class="is-larger has-text-centered">
+                        <div class="waktu tanggal-hari has-text-centered"></div> 
+                        <div class="waktu tanggal-angka has-text-centered">19</div>
+                        <div class="waktu tanggal-bulan has-text-centered">Шілде 2026 жыл</div>
+                    </p>
+                  
+                  </div>
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-in" data-aos-easing="linear"
+                  >
+                  
+                    <h1 class="waktu is-larger has-text-centered">
+                      Сағат:
+                      <br>
+                      <strong>14:00</strong>
+                    </h1>
+                  
+                  </div>
+
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-left">
+                    
+
+                    <p class="waktu is-larger has-text-centered">
+                      Орналасқан жері:
+                      <br>
+                      <strong> <a href="https://2gis.kz/kokshetau/firm/70000001041208283?m=69.381766%2C53.311454%2F15.8"> “Khan Saray” мейрамханасы</a></strong>
+                    </p>
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      <!-- End Waktu Content -->
+
+            <!-- Begin Lokasi Section -->
+            <!-- <div class="section-light" id="lokasi" data-aos="fade-in" data-aos-easing="linear" >
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">Ornalasqan jeri</h1>
+                  <p class="tempat is-larger has-text-centered">
+                    <strong>“Khan Saray” meıramhanasy</strong>
+                    <br>
+                    Ul.mira 24, Kokshetau 020000, Kazakhstan
+                    <br>
+
+                  </p>
+                </div>
+                <div class="section-map">
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d34576.00641752815!2d69.363058!3d53.2975568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424c950b807ad0c1%3A0x9b9e4518e144c3c2!2z0JvQsNGD0L3QtNC2LdCx0LDRgCBUZXJyYWNl!5e1!3m2!1sru!2sfr!4v1774481288161!5m2!1sru!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="has-text-centered">
+                  <a href="https://2gis.kz/kokshetau/firm/70000001041208283?m=69.381766%2C53.311454%2F15.8" class="button btn-arah" data-aos="fade-right">
+                    <i class="far fa-directions"></i>
+                    &nbsp;&nbsp;Kórý
+                  </a>
+                </div>
+              </div>
+            </div> -->
+      <!-- End Lokasi Content -->
+
+
+
+
+
+      <!-- Begin RSVP Content -->
+      <div class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in-up"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title">Бекіту</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered">
+                
+                    <a href="https://wa.me/77025315121?text=%D0%91%D1%96%D0%B7%20%D0%BA%D0%B5%D0%BB%D0%B5%D0%BC%D1%96%D0%B7" class="button btn-whatsapp" data-aos="fade-right">
+                      <i class="fab fa-whatsapp"></i>
+                      &nbsp;&nbsp;Whatsapp
+                    </a>
+            </div>
+ 
+         </div>
+        </div>
+      </div>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <p class="has-vertically-align">2026 SHATKENOV FAMILY</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+
+
+
+<audio id="myAudio" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play().catch(function(error) {
+      console.log("Автоплей заблокирован браузером, ждем клика.");
+    });
+    // Удаляем обработчики после первого клика, чтобы не перезапускать музыку
+    document.removeEventListener('click', playAudio);
+    document.removeEventListener('touchstart', playAudio);
+  }
+
+  // Слушаем клик или касание на мобилках
+  document.addEventListener('click', playAudio);
+  document.addEventListener('touchstart', playAudio);
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script>
+  document.addEventListener('click', function() {
+    document.getElementById('background-audio').play();
+
+  });
+
+
+</script> -->
+
+
+<!-- <button id="stop-autoscroll" class="button is-danger is-outlined" style="position: fixed; bottom: 20px; right: 20px;">Tokta</button> -->
+<script>
+
+let autoscrollEnabled = false;
+let timeoutId = null;
+let scrollPosition = 0;
+
+function startAutoscroll() {
+  var pageHeight = document.body.offsetHeight;
+  var viewportHeight = window.innerHeight;
+  var maxScrollPosition = pageHeight - viewportHeight;
+  var scrollSpeed = 3; // pixels per millisecond
+
+  function animateScroll() {
+    if (scrollPosition >= maxScrollPosition) {
+      // Pause scrolling for 5 seconds
+      clearTimeout(timeoutId);
+      setTimeout(function() {
+        scrollPosition = 0;
+        $('html, body').animate({ scrollTop: 0 }, 50, function() {
+          animateScroll();
+        });
+      }, 10000);
+    } else {
+      if (autoscrollEnabled) {
+        $('html, body').animate({ scrollTop: scrollPosition }, 50);
+        scrollPosition += scrollSpeed;
+        timeoutId = setTimeout(animateScroll, 16); // 16ms = 60fps
+      }
+    }
+  }
+
+  animateScroll();
+}
+
+startAutoscroll();
+
+document.getElementById('stop-autoscroll').addEventListener('click', function() {
+  autoscrollEnabled = false;
+  this.textContent = 'Toktaldy';
+  clearTimeout(timeoutId);
+  $('html, body').stop(true, true); // Stop the animation immediately
+});
+
+</script>
+
+
+  </body>
+</html>
