@@ -307,48 +307,35 @@
 
 <!-- <button id="stop-autoscroll" class="button is-danger is-outlined" style="position: fixed; bottom: 20px; right: 20px;">Tokta</button> -->
 <script>
-
 let autoscrollEnabled = true;
-let timeoutId = null;
-let scrollPosition = 0;
 
-function startAutoscroll() {
-  var pageHeight = document.body.offsetHeight;
-  var viewportHeight = window.innerHeight;
-  var maxScrollPosition = pageHeight - viewportHeight;
-  var scrollSpeed = 2; // pixels per millisecond
+function autoScroll() {
+  if (!autoscrollEnabled) return;
 
-  function animateScroll() {
-    if (scrollPosition >= maxScrollPosition) {
-      // Pause scrolling for 5 seconds
-      clearTimeout(timeoutId);
-      setTimeout(function() {
-        scrollPosition = 0;
-        $('html, body').animate({ scrollTop: 0 }, 50, function() {
-          animateScroll();
-        });
-      }, 10000);
-    } else {
-      if (autoscrollEnabled) {
-        $('html, body').animate({ scrollTop: scrollPosition }, 50);
-        scrollPosition += scrollSpeed;
-        timeoutId = setTimeout(animateScroll, 16); // 16ms = 60fps
-      }
-    }
+  window.scrollBy(0, 0.5); // скорость (0.5 = медленно)
+
+  // если дошли до конца
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 3000);
   }
 
-  animateScroll();
+  requestAnimationFrame(autoScroll);
 }
 
-startAutoscroll();
+autoScroll();
 
-document.getElementById('stop-autoscroll').addEventListener('click', function() {
+
+// ❗ Останавливаем ТОЛЬКО по действиям пользователя
+function stopAutoscroll() {
   autoscrollEnabled = false;
-  this.textContent = 'Toktaldy';
-  clearTimeout(timeoutId);
-  $('html, body').stop(true, true); // Stop the animation immediately
-});
+}
 
+// НЕ используем scroll — он срабатывает от автоскролла!
+document.addEventListener('click', stopAutoscroll);
+document.addEventListener('touchstart', stopAutoscroll);
+document.addEventListener('wheel', stopAutoscroll);
 </script>
 
 
