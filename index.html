@@ -308,7 +308,7 @@
 <!-- <button id="stop-autoscroll" class="button is-danger is-outlined" style="position: fixed; bottom: 20px; right: 20px;">Tokta</button> -->
 <script>
 
-let autoscrollEnabled = false;
+let autoscrollEnabled = true;
 let timeoutId = null;
 let scrollPosition = 0;
 
@@ -316,7 +316,7 @@ function startAutoscroll() {
   var pageHeight = document.body.offsetHeight;
   var viewportHeight = window.innerHeight;
   var maxScrollPosition = pageHeight - viewportHeight;
-  var scrollSpeed = 3; // pixels per millisecond
+  var scrollSpeed = 2; // pixels per millisecond
 
   function animateScroll() {
     if (scrollPosition >= maxScrollPosition) {
